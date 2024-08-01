@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CQRSMediatR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db42e623b7bc4bcce74d04b991620a055730122f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CQRSMediatR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CQRSMediatR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

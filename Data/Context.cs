@@ -25,7 +25,9 @@ namespace CQRSMediatR.Data
         {
             modelBuilder.Entity<Employee>().HasKey(p => p.Id);
             modelBuilder.Entity<Employee>().HasData(
-                new Employee(1,"Rahul","rahul1987@gmail.com","New York,USA",46)
+                new Employee(Guid.NewGuid().ToString(),"Rahul","rahul1987@gmail.com","New York,USA",46),
+                new Employee(Guid.NewGuid().ToString(), "Sam", "Sam1978@gmail.com", "New York,USA", 46),
+                new Employee(Guid.NewGuid().ToString(), "Ben", "Ben1998@gmail.com", "New York,USA", 46)
             );
         }
     }

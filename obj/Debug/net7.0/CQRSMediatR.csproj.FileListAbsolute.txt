@@ -77,3 +77,4 @@ D:\Csharp\project\CQRSMediatR\obj\Debug\net7.0\refint\CQRSMediatR.dll
 D:\Csharp\project\CQRSMediatR\obj\Debug\net7.0\CQRSMediatR.pdb
 D:\Csharp\project\CQRSMediatR\obj\Debug\net7.0\CQRSMediatR.genruntimeconfig.cache
 D:\Csharp\project\CQRSMediatR\obj\Debug\net7.0\ref\CQRSMediatR.dll
+D:\Csharp\project\CQRSMediatR\obj\Debug\net7.0\CQRSMediatR.sourcelink.json

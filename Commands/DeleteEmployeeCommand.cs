@@ -4,6 +4,6 @@ namespace CQRSMediatR.Commands
 {
     public class DeleteEmployeeCommand: IRequest<int>
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
     }
 }

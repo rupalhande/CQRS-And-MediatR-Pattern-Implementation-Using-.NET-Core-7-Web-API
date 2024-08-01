@@ -1,21 +1,22 @@
-﻿using CQRSMediatR.Models;
+﻿using CQRSMediatR.Data;
+using CQRSMediatR.Models;
 using CQRSMediatR.Queries;
-using CQRSMediatR.Repository;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace CQRSMediatR.Handlers
 {
     public class GetEmployeeListHandler : IRequestHandler<GetEmployeeListQuery, List<Employee>>
     {
-        private readonly IEmployeeRepository employeeRepository;
+        private readonly Context _dbContext;
 
-        public GetEmployeeListHandler(IEmployeeRepository employeeRepository)
+        public GetEmployeeListHandler(Context dbContex)
         {
-            this.employeeRepository = employeeRepository;
+            this._dbContext = dbContex;
         }
         public async Task<List<Employee>> Handle(GetEmployeeListQuery request, CancellationToken cancellationToken)
         {
-            return await employeeRepository.GetEmployeeListAsync();
+            return await _dbContext.Employees.ToListAsync(cancellationToken);
         }
     }
 }

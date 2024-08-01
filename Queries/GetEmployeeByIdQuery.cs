@@ -5,6 +5,6 @@ namespace CQRSMediatR.Queries
 {
     public class GetEmployeeByIdQuery:IRequest<Employee>
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
     }
 }
